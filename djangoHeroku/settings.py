@@ -78,11 +78,14 @@ WSGI_APPLICATION = 'djangoHeroku.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'd1den4vt1mn4t0',
+        'USER': 'ryjgbmqmyeqtei',
+        'PASSWORD': 'd04c963333265009c0f760169fb42d1ab3a0dedc465c61a101fbd775deba5897',
+        'HOST': 'ec2-176-34-211-0.eu-west-1.compute.amazonaws.com',
+        'PORT': '5432',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
